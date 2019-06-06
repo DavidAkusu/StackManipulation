@@ -1,0 +1,65 @@
+Query # 1: SMOKING = N
+	SMOKING N = 
+	Query Result:
+	ID      Customer Name       
+	11111   BOB WIRE            
+	22222   MELBA TOAST         
+	33355   TED E BARR          
+	33366   REED BOOK           
+	44444   AVA KASHUN          
+	555111  SPRING WATER        
+	88888   HARRY HEAD          
+	99999   E RACE              
+Query # 2: SMOKING = Y
+	SMOKING Y = 
+	Query Result:
+	ID      Customer Name       
+	55555   ROCK D BOAT         
+	55511   JIMMY LOCK          
+	66666   E VILLE             
+	77777   ANITA PACK          
+Query # 3: GENDER = F
+	GENDER F = 
+	Query Result:
+	ID      Customer Name       
+	22222   MELBA TOAST         
+	33333   CRYSTAL BALL        
+	44444   AVA KASHUN          
+	555111  SPRING WATER        
+	77777   ANITA PACK          
+Query # 4: SMOKING = N AND GENDER = F
+	SMOKING N = GENDER F = AND 
+	Query Result:
+	ID      Customer Name       
+	22222   MELBA TOAST         
+	44444   AVA KASHUN          
+	555111  SPRING WATER        
+Query # 5: BOOK NEVER SCIFI
+	BOOK SCIFI NEVER 
+	Query Result:
+	ID      Customer Name       
+	11111   BOB WIRE            
+	22222   MELBA TOAST         
+	33333   CRYSTAL BALL        
+	33355   TED E BARR          
+	44444   AVA KASHUN          
+	55555   ROCK D BOAT         
+	55511   JIMMY LOCK          
+	555111  SPRING WATER        
+	66666   E VILLE             
+Query # 6: BOOK ONLY SCIFI 
+	BOOK SCIFI ONLY 
+	Query Result:
+	ID      Customer Name       
+	77777   ANITA PACK          
+	99999   E RACE              
+Query # 7: SMOKING = N AND ( EXERCISE = HIKE OR EXERCISE = BIKE )
+	SMOKING N = EXERCISE HIKE = EXERCISE BIKE = OR AND 
+	Query Result:
+	ID      Customer Name       
+	11111   BOB WIRE            
+	33355   TED E BARR          
+	44444   AVA KASHUN          
+	88888   HARRY HEAD          
+	99999   E RACE              
+
